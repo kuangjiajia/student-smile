@@ -1,12 +1,10 @@
-import { STATICPATH } from '../config/index.js'
-
-
-const bodyParser = require('koa-bodyparser')
-const static = require("koa-static")
-const path = require("path")
-
+import bodyParser from "koa-bodyparser"
+import staticPath from "koa-static"
+import path from "path"
+import intercept from "./intercept/index.js"
 
 module.exports = (app) => {
     app.use(bodyParser())
-    // app.use(static(path.resolve(__dirname)))
+    app.use(staticPath(path.resolve("../../build")))
+    app.use(intercept())
 }

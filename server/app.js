@@ -1,9 +1,10 @@
 import { PORT } from './config/index.js'
-
-const Koa = require("koa")
-const middleware = require("./middleware/index.js")
+import router from './router/index.js'
+import Koa from "koa"
+import middleware from "./middleware/index.js"
 const app = new Koa()
 
+router(app)
 middleware(app)
 
 app.listen(PORT,async () => {

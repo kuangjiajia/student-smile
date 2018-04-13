@@ -1,7 +1,7 @@
 const path = require("path")
 
-const PORT = 3000
-const STATICPATH = path.join(__dirname + "public")
+const PORT = 9300
+const STATICPATH = path.resolve("../build/index.html")
 
 export {
     PORT,
