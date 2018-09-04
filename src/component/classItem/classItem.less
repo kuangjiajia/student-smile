@@ -1,0 +1,95 @@
+.classItem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 88vw;
+  height: 28vw;
+  border-radius: 1vw;
+  margin-top: 4vw;
+  background-color: #fff;
+  text-decoration: none;
+  box-shadow: 0.05vw 0.05vw 2vw -0.2vw rgba(0, 0, 0, 0.3),
+    -0.05vw -0.05vw 5vw -3vw rgba(0, 0, 0, 0.3);
+  &:last-of-type {
+    margin-bottom: 15vw;
+  }
+  .class-pic {
+    width: 30vw;
+    height: 24vw;
+    border-radius: 2vw;
+  }
+  .class-content {
+    position: relative;
+    width: 50vw;
+    height: 24vw;
+    .class-id {
+      font-size: 14px;
+      font-weight: normal;
+      color: #585858;
+    }
+    .class-name {
+      font-size: 16px;
+      font-weight: normal;
+      color: #cccccc;
+    }
+    .class-content-footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 50vw;
+      height: 8vw;
+      .rank {
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+        width: 30vw;
+        height: 8vw;
+        font-size: 12px;
+        .rank-icon {
+          display: block;
+          width: 4vw;
+          height: 4vw;
+          margin-right: 1vw;
+          background: url(./rank.png);
+          background-size: 100% 100%;
+        }
+      }
+      .score {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 19vw;
+        height: 8vw;
+        font-size: 12px;
+        .score-icon {
+          display: block;
+          width: 4vw;
+          height: 4vw;
+          background: url(./score.png);
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+}
+
+.image-show {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 20;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100vw;
+  }
+}

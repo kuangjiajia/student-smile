@@ -1,0 +1,42 @@
+.stu-item {
+  width: 80vw;
+  height: 60vw;
+  background-color: #fff;
+  margin-top: 6vw;
+  box-shadow: 0.5vw 0.5vw 5vw 1vw rgba(0, 0, 0, 0.2);
+  &:last-of-type {
+    margin-bottom: 15vw;
+  }
+  .stu-item-banner {
+    width: 80vw;
+    height: 48vw;
+  }
+  .stu-item-nickName {
+    margin-left: 2vw;
+    font-size: 16px;
+    color: grey;
+  }
+  .stu-item-desc {
+    margin-left: 2vw;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  .image-show {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 20;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      width: 100vw;
+    }
+  }
+}

@@ -1,0 +1,226 @@
+.smile {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 145vw;
+  background-color: #f8f8f8;
+  .smile-content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 88vw;
+    height: 130vw;
+    background-color: #fff;
+    border-radius: 2vw;
+    .show-pic {
+      display: flex;
+      width: 80vw;
+      height: 4vw;
+      margin-top: 4vw;
+      font-size: 12px;
+      font-weight: normal;
+      color: grey;
+      i {
+        display: block;
+        width: 4vw;
+        height: 4vw;
+        background: url(./camera.png);
+        background-size: 100% 100%;
+        margin-right: 1vw;
+      }
+    }
+    .add-pic {
+      position: relative;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+      width: 80vw;
+      height: 50vw;
+      margin-top: 2vw;
+      border: 1px dashed #ebebeb;
+      .add-pic-icon {
+        width: 80vw;
+        height: 10vw;
+        line-height: 10vw;
+        text-align: center;
+        font-size: 8vw;
+        color: #ebebeb;
+      }
+      .add-pic-text {
+        width: 80vw;
+        height: 8vw;
+        line-height: 8vw;
+        text-align: center;
+        font-size: 4vw;
+        color: #ebebeb;
+      }
+      input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 5;
+      }
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .nickName {
+      display: flex;
+      flex-flow: row wrap;
+      width: 80vw;
+      height: 20vw;
+      margin-top: 4vw;
+      color: #b2b2b2;
+      i {
+        display: block;
+        width: 4vw;
+        height: 4vw;
+        background: url(./nickName.png);
+        background-size: 100% 100%;
+        margin-right: 1vw;
+      }
+      span {
+        display: block;
+        width: 10vw;
+        height: 4vw;
+        line-height: 4vw;
+        text-align: center;
+      }
+      input {
+        width: 70vw;
+        height: 6vw;
+        padding: 1vw 4vw;
+        border: none;
+        outline: none;
+        border: 1px dashed #b2b2b2;
+      }
+    }
+    .declaration {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      width: 80vw;
+      height: 30vw;
+      margin-top: 4vw;
+      color: #b2b2b2;
+      i {
+        display: block;
+        width: 4.5vw;
+        height: 4.5vw;
+        background: url(./declare.png);
+        background-size: 100% 100%;
+      }
+      span {
+        display: block;
+        width: 20vw;
+        height: 4vw;
+        line-height: 4vw;
+        text-align: center;
+      }
+      textarea {
+        width: 74vw;
+        height: 12vw;
+        padding: 1vw 3vw;
+        border: none;
+        outline: none;
+        font-size: 12px;
+        border: 1px dashed #b2b2b2;
+      }
+    }
+  }
+  .upLoad {
+    width: 70vw;
+    height: 12vw;
+    background-color: #ff926b;
+    color: white;
+    font-size: 14px;
+    border-radius: 6vw;
+    outline: none;
+    border: none;
+  }
+  .mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.09);
+    .mask-content {
+      display: flex;
+      align-items: center;
+      flex-flow: column wrap;
+      justify-content: space-around;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 75vw;
+      height: 90vw;
+      border-radius: 2vw;
+      background-color: #fff;
+      .mask-content-img {
+        width: 45vw;
+        height: 45vw;
+        border-radius: 45vw;
+        background: url(./boy.png);
+        background-size: 100% 100%;
+      }
+      .mask-content-text {
+        width: 65vw;
+        height: 11vw;
+        padding: 0 5vw;
+        text-align: center;
+        font-family: "微软雅黑";
+      }
+      .mask-make-sure {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 65vw;
+        height: 15vw;
+        color: #fff;
+        .mask-sure {
+          width: 25vw;
+          height: 8vw;
+          line-height: 8vw;
+          background-color: #ff926b;
+          border-radius: 8vw;
+          text-align: center;
+        }
+        .mask-false {
+          width: 25vw;
+          height: 8vw;
+          line-height: 8vw;
+          border: 1px solid grey;
+          border-radius: 8vw;
+          text-align: center;
+          color: grey;
+        }
+      }
+    }
+  }
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+
+.clearfix:after {
+  clear: both;
+}

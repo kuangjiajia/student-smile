@@ -1,0 +1,64 @@
+.classNav {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 85vh;
+  background-color: #f7f7f7;
+  .classNav-img {
+    width: 40vw;
+    height: 40vw;
+    background: url(../smile/boy.png);
+    background-size: 100% 100%;
+    border-radius: 40vw;
+  }
+  .classNav-text {
+    margin-top: 5vw;
+    color: grey;
+    max-height: 10vw;
+  }
+}
+
+.class-item {
+  .class-item-header {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 8vw;
+    .class-item-header-scName {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+      height: 8vw;
+      text-align: center;
+      font-size: 13px;
+      color: grey;
+      span {
+        display: block;
+        width: 5vw;
+        height: 5vw;
+        background: url(./rank.png);
+        background-size: 100% 100%;
+      }
+      i {
+        display: block;
+        width: 4.5vw;
+        height: 4.5vw;
+        margin-left: 8vw;
+        background: url(./vote.png);
+        background-size: 100% 100%;
+      }
+    }
+  }
+  .class-item-lists {
+    display: flex;
+    width: 100vw;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #f7f7f7;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
